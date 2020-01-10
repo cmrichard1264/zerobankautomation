@@ -1,5 +1,6 @@
 package com.zerobank.pages;
 
+import com.zerobank.utilities.ConfigurationReader;
 import com.zerobank.utilities.Driver;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
@@ -43,6 +44,14 @@ public class LoginPage extends BasePage{
         //Keys.ENTER to replace login click
         passwordInput.sendKeys(password, Keys.ENTER);
     }
+
+    public void login() {
+        Driver.get().get(ConfigurationReader.getProperty("url"));
+        String userName = ConfigurationReader.getProperty("username");
+        String password = ConfigurationReader.getProperty("password");
+        login(userName, password);
+    }
+
 
 
 }
