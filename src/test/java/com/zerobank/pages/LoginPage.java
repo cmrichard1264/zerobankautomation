@@ -1,5 +1,7 @@
 package com.zerobank.pages;
 
+import com.zerobank.utilities.BrowserUtils;
+import com.zerobank.utilities.ConfigurationReader;
 import com.zerobank.utilities.Driver;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
@@ -23,25 +25,11 @@ public class LoginPage extends BasePage{
     @FindBy(xpath = "//input[@value=\"Sign in\"]")
     public WebElement signInButton;
 
-    public LoginPage() {
-        //it's mandatory if you want to use @FindBy annotation
-        //this means LoginPage class
-        //Driver.get() return webdriver object
-        PageFactory.initElements(Driver.get(), this);
-    }
 
-    /**
-     * reusable login method
-     * just call this method to login
-     * provide username and password as parameters
-     *
-     * @param userName
-     * @param password
-     */
-    public void login(String userName, String password) {
-        userInput.sendKeys(userName);
-        //Keys.ENTER to replace login click
-        passwordInput.sendKeys(password, Keys.ENTER);
+    public void login() {
+        Driver.get().get(ConfigurationReader.getProperty("url"));
+        userInput.sendKeys("username");
+        passwordInput.sendKeys("password", Keys.ENTER);
     }
 
 

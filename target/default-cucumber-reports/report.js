@@ -1,292 +1,100 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/AccountActivityNavigation.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/FindTransactions.feature");
 formatter.feature({
-  "name": "Navigating to specific accounts in Account Activity",
+  "name": "Find Transactions in Account Activity",
   "description": "",
   "keyword": "Feature",
   "tags": [
     {
-      "name": "@dropdown"
+      "name": "@find_transactions"
     }
   ]
 });
 formatter.scenario({
-  "name": "Savings account redirect",
+  "name": "Search date range",
   "description": "",
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@dropdown"
+      "name": "@find_transactions"
     }
   ]
 });
 formatter.before({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
-  "name": "the user is logged in",
+  "name": "the user accesses the Find Transactions tab",
   "keyword": "Given "
 });
-formatter.match({
-  "location": "AccountActivityNavigationStepDefinitions.the_user_is_logged_in()"
-});
+formatter.match({});
 formatter.result({
-  "status": "passed"
+  "status": "undefined"
 });
 formatter.step({
-  "name": "the user clicks on Savings link on the Account Summary page",
+  "name": "the user enters date range from “2012-09-01” to “2012-09-06”",
   "keyword": "When "
 });
-formatter.match({
-  "location": "AccountActivityNavigationStepDefinitions.the_user_clicks_on_Savings_link_on_the_Account_Summary_page()"
-});
+formatter.match({});
 formatter.result({
-  "status": "passed"
+  "status": "undefined"
 });
 formatter.step({
-  "name": "the Account Activity page should be displayed",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "AccountActivityNavigationStepDefinitions.the_Account_Activity_page_should_be_displayed()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Account drop down should have \"Savings\" option selected",
+  "name": "clicks search",
   "keyword": "And "
 });
-formatter.match({
-  "location": "AccountActivityNavigationStepDefinitions.account_drop_down_should_have_option_selected(String)"
-});
+formatter.match({});
 formatter.result({
-  "status": "passed"
-});
-formatter.after({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "Brokerage account redirect",
-  "description": "",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "name": "@dropdown"
-    }
-  ]
-});
-formatter.before({
-  "status": "passed"
+  "status": "undefined"
 });
 formatter.step({
-  "name": "the user is logged in",
-  "keyword": "Given "
+  "name": "results table should only show transactions dates between “2012-09-01” to “2012-09-06”",
+  "keyword": "Then "
 });
-formatter.match({
-  "location": "AccountActivityNavigationStepDefinitions.the_user_is_logged_in()"
-});
+formatter.match({});
 formatter.result({
-  "status": "passed"
+  "status": "undefined"
 });
 formatter.step({
-  "name": "the user clicks on Savings link on the Account Summary page",
+  "name": "the results should be sorted by most recent date",
+  "keyword": "And "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "the user enters date range from “2012-09-02” to “2012-09-06”",
   "keyword": "When "
 });
-formatter.match({
-  "location": "AccountActivityNavigationStepDefinitions.the_user_clicks_on_Savings_link_on_the_Account_Summary_page()"
-});
+formatter.match({});
 formatter.result({
-  "status": "passed"
+  "status": "undefined"
 });
 formatter.step({
-  "name": "the Account Activity page should be displayed",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "AccountActivityNavigationStepDefinitions.the_Account_Activity_page_should_be_displayed()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Account drop down should have \"Brokerage\" option selected",
+  "name": "clicks search",
   "keyword": "And "
 });
-formatter.match({
-  "location": "AccountActivityNavigationStepDefinitions.account_drop_down_should_have_option_selected(String)"
-});
+formatter.match({});
 formatter.result({
-  "status": "passed"
-});
-formatter.after({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "Checking account redirect",
-  "description": "",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "name": "@dropdown"
-    }
-  ]
-});
-formatter.before({
-  "status": "passed"
+  "status": "undefined"
 });
 formatter.step({
-  "name": "the user is logged in",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "AccountActivityNavigationStepDefinitions.the_user_is_logged_in()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "the user clicks on Savings link on the Account Summary page",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "AccountActivityNavigationStepDefinitions.the_user_clicks_on_Savings_link_on_the_Account_Summary_page()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "the Account Activity page should be displayed",
+  "name": "results table should only show transactions dates between “2012-09-02” to “2012-09-06”",
   "keyword": "Then "
 });
-formatter.match({
-  "location": "AccountActivityNavigationStepDefinitions.the_Account_Activity_page_should_be_displayed()"
-});
+formatter.match({});
 formatter.result({
-  "status": "passed"
+  "status": "undefined"
 });
 formatter.step({
-  "name": "Account drop down should have \"Checking\" option selected",
+  "name": "the results table should only not contain transactions dated “2012-09-01”",
   "keyword": "And "
 });
-formatter.match({
-  "location": "AccountActivityNavigationStepDefinitions.account_drop_down_should_have_option_selected(String)"
-});
+formatter.match({});
 formatter.result({
-  "status": "passed"
+  "status": "undefined"
 });
 formatter.after({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "Credit Card account redirect",
-  "description": "",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "name": "@dropdown"
-    }
-  ]
-});
-formatter.before({
-  "status": "passed"
-});
-formatter.step({
-  "name": "the user is logged in",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "AccountActivityNavigationStepDefinitions.the_user_is_logged_in()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "the user clicks on Savings link on the Account Summary page",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "AccountActivityNavigationStepDefinitions.the_user_clicks_on_Savings_link_on_the_Account_Summary_page()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "the Account Activity page should be displayed",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "AccountActivityNavigationStepDefinitions.the_Account_Activity_page_should_be_displayed()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Account drop down should have \"Credit Card\" option selected",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "AccountActivityNavigationStepDefinitions.account_drop_down_should_have_option_selected(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.after({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "Loan account redirect",
-  "description": "",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "name": "@dropdown"
-    }
-  ]
-});
-formatter.before({
-  "status": "passed"
-});
-formatter.step({
-  "name": "the user is logged in",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "AccountActivityNavigationStepDefinitions.the_user_is_logged_in()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "the user clicks on Savings link on the Account Summary page",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "AccountActivityNavigationStepDefinitions.the_user_clicks_on_Savings_link_on_the_Account_Summary_page()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "the Account Activity page should be displayed",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "AccountActivityNavigationStepDefinitions.the_Account_Activity_page_should_be_displayed()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Account drop down should have \"Loan\" option selected",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "AccountActivityNavigationStepDefinitions.account_drop_down_should_have_option_selected(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.after({
-  "status": "passed"
+  "status": "skipped"
 });
 });

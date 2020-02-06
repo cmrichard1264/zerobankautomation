@@ -3,12 +3,12 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2020-01-08T19:26:33.928Z",
+        "start_timestamp": "2020-01-24T05:06:25.858Z",
         "before": [
           {
             "result": {
-              "duration": 4806042500,
-              "status": "passed"
+              "duration": 555300,
+              "status": "skipped"
             },
             "match": {
               "location": "Hook.setup()"
@@ -16,14 +16,14 @@
           }
         ],
         "line": 4,
-        "name": "Savings account redirect",
+        "name": "Search date range",
         "description": "",
-        "id": "navigating-to-specific-accounts-in-account-activity;savings-account-redirect",
+        "id": "find-transactions-in-account-activity;search-date-range",
         "after": [
           {
             "result": {
-              "duration": 937259200,
-              "status": "passed"
+              "duration": 17900,
+              "status": "skipped"
             },
             "match": {
               "location": "Hook.teardown(Scenario)"
@@ -35,442 +35,101 @@
         "steps": [
           {
             "result": {
-              "duration": 1135838600,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 5,
-            "name": "the user is logged in",
-            "match": {
-              "location": "AccountActivityNavigationStepDefinitions.the_user_is_logged_in()"
-            },
+            "name": "the user accesses the Find Transactions tab",
+            "match": {},
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 927276700,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 6,
-            "name": "the user clicks on Savings link on the Account Summary page",
-            "match": {
-              "location": "AccountActivityNavigationStepDefinitions.the_user_clicks_on_Savings_link_on_the_Account_Summary_page()"
-            },
+            "name": "the user enters date range from “2012-09-01” to “2012-09-06”",
+            "match": {},
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 160891100,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 7,
-            "name": "the Account Activity page should be displayed",
-            "match": {
-              "location": "AccountActivityNavigationStepDefinitions.the_Account_Activity_page_should_be_displayed()"
-            },
-            "keyword": "Then "
+            "name": "clicks search",
+            "match": {},
+            "keyword": "And "
           },
           {
             "result": {
-              "duration": 230144800,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 8,
-            "name": "Account drop down should have \"Savings\" option selected",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Savings\"",
-                  "offset": 30
-                }
-              ],
-              "location": "AccountActivityNavigationStepDefinitions.account_drop_down_should_have_option_selected(String)"
+            "name": "results table should only show transactions dates between “2012-09-01” to “2012-09-06”",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "undefined"
             },
+            "line": 9,
+            "name": "the results should be sorted by most recent date",
+            "match": {},
             "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@dropdown"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-01-08T19:26:42.173Z",
-        "before": [
+          },
           {
             "result": {
-              "duration": 3256167900,
-              "status": "passed"
+              "status": "undefined"
             },
-            "match": {
-              "location": "Hook.setup()"
-            }
-          }
-        ],
-        "line": 10,
-        "name": "Brokerage account redirect",
-        "description": "",
-        "id": "navigating-to-specific-accounts-in-account-activity;brokerage-account-redirect",
-        "after": [
+            "line": 10,
+            "name": "the user enters date range from “2012-09-02” to “2012-09-06”",
+            "match": {},
+            "keyword": "When "
+          },
           {
             "result": {
-              "duration": 807525900,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hook.teardown(Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 1307363600,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 11,
-            "name": "the user is logged in",
-            "match": {
-              "location": "AccountActivityNavigationStepDefinitions.the_user_is_logged_in()"
-            },
-            "keyword": "Given "
+            "name": "clicks search",
+            "match": {},
+            "keyword": "And "
           },
           {
             "result": {
-              "duration": 932848500,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 12,
-            "name": "the user clicks on Savings link on the Account Summary page",
-            "match": {
-              "location": "AccountActivityNavigationStepDefinitions.the_user_clicks_on_Savings_link_on_the_Account_Summary_page()"
-            },
-            "keyword": "When "
+            "name": "results table should only show transactions dates between “2012-09-02” to “2012-09-06”",
+            "match": {},
+            "keyword": "Then "
           },
           {
             "result": {
-              "duration": 82907800,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 13,
-            "name": "the Account Activity page should be displayed",
-            "match": {
-              "location": "AccountActivityNavigationStepDefinitions.the_Account_Activity_page_should_be_displayed()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 246644200,
-              "status": "passed"
-            },
-            "line": 14,
-            "name": "Account drop down should have \"Brokerage\" option selected",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Brokerage\"",
-                  "offset": 30
-                }
-              ],
-              "location": "AccountActivityNavigationStepDefinitions.account_drop_down_should_have_option_selected(String)"
-            },
+            "name": "the results table should only not contain transactions dated “2012-09-01”",
+            "match": {},
             "keyword": "And "
           }
         ],
         "tags": [
           {
-            "name": "@dropdown"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-01-08T19:26:48.811Z",
-        "before": [
-          {
-            "result": {
-              "duration": 3214027500,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hook.setup()"
-            }
-          }
-        ],
-        "line": 16,
-        "name": "Checking account redirect",
-        "description": "",
-        "id": "navigating-to-specific-accounts-in-account-activity;checking-account-redirect",
-        "after": [
-          {
-            "result": {
-              "duration": 845665200,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hook.teardown(Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 1166116000,
-              "status": "passed"
-            },
-            "line": 17,
-            "name": "the user is logged in",
-            "match": {
-              "location": "AccountActivityNavigationStepDefinitions.the_user_is_logged_in()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 392713200,
-              "status": "passed"
-            },
-            "line": 18,
-            "name": "the user clicks on Savings link on the Account Summary page",
-            "match": {
-              "location": "AccountActivityNavigationStepDefinitions.the_user_clicks_on_Savings_link_on_the_Account_Summary_page()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 108705400,
-              "status": "passed"
-            },
-            "line": 19,
-            "name": "the Account Activity page should be displayed",
-            "match": {
-              "location": "AccountActivityNavigationStepDefinitions.the_Account_Activity_page_should_be_displayed()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 186261600,
-              "status": "passed"
-            },
-            "line": 20,
-            "name": "Account drop down should have \"Checking\" option selected",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Checking\"",
-                  "offset": 30
-                }
-              ],
-              "location": "AccountActivityNavigationStepDefinitions.account_drop_down_should_have_option_selected(String)"
-            },
-            "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@dropdown"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-01-08T19:26:54.730Z",
-        "before": [
-          {
-            "result": {
-              "duration": 3230300600,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hook.setup()"
-            }
-          }
-        ],
-        "line": 22,
-        "name": "Credit Card account redirect",
-        "description": "",
-        "id": "navigating-to-specific-accounts-in-account-activity;credit-card-account-redirect",
-        "after": [
-          {
-            "result": {
-              "duration": 821066700,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hook.teardown(Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 1167806500,
-              "status": "passed"
-            },
-            "line": 23,
-            "name": "the user is logged in",
-            "match": {
-              "location": "AccountActivityNavigationStepDefinitions.the_user_is_logged_in()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 1051664600,
-              "status": "passed"
-            },
-            "line": 24,
-            "name": "the user clicks on Savings link on the Account Summary page",
-            "match": {
-              "location": "AccountActivityNavigationStepDefinitions.the_user_clicks_on_Savings_link_on_the_Account_Summary_page()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 116150600,
-              "status": "passed"
-            },
-            "line": 25,
-            "name": "the Account Activity page should be displayed",
-            "match": {
-              "location": "AccountActivityNavigationStepDefinitions.the_Account_Activity_page_should_be_displayed()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 226107500,
-              "status": "passed"
-            },
-            "line": 26,
-            "name": "Account drop down should have \"Credit Card\" option selected",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Credit Card\"",
-                  "offset": 30
-                }
-              ],
-              "location": "AccountActivityNavigationStepDefinitions.account_drop_down_should_have_option_selected(String)"
-            },
-            "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@dropdown"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-01-08T19:27:01.347Z",
-        "before": [
-          {
-            "result": {
-              "duration": 3241708300,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hook.setup()"
-            }
-          }
-        ],
-        "line": 28,
-        "name": "Loan account redirect",
-        "description": "",
-        "id": "navigating-to-specific-accounts-in-account-activity;loan-account-redirect",
-        "after": [
-          {
-            "result": {
-              "duration": 871264900,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hook.teardown(Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 1298247200,
-              "status": "passed"
-            },
-            "line": 29,
-            "name": "the user is logged in",
-            "match": {
-              "location": "AccountActivityNavigationStepDefinitions.the_user_is_logged_in()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 547394100,
-              "status": "passed"
-            },
-            "line": 30,
-            "name": "the user clicks on Savings link on the Account Summary page",
-            "match": {
-              "location": "AccountActivityNavigationStepDefinitions.the_user_clicks_on_Savings_link_on_the_Account_Summary_page()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 93438800,
-              "status": "passed"
-            },
-            "line": 31,
-            "name": "the Account Activity page should be displayed",
-            "match": {
-              "location": "AccountActivityNavigationStepDefinitions.the_Account_Activity_page_should_be_displayed()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 217384400,
-              "status": "passed"
-            },
-            "line": 32,
-            "name": "Account drop down should have \"Loan\" option selected",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Loan\"",
-                  "offset": 30
-                }
-              ],
-              "location": "AccountActivityNavigationStepDefinitions.account_drop_down_should_have_option_selected(String)"
-            },
-            "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@dropdown"
+            "name": "@find_transactions"
           }
         ]
       }
     ],
-    "name": "Navigating to specific accounts in Account Activity",
+    "name": "Find Transactions in Account Activity",
     "description": "",
-    "id": "navigating-to-specific-accounts-in-account-activity",
+    "id": "find-transactions-in-account-activity",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/AccountActivityNavigation.feature",
+    "uri": "file:src/test/resources/features/FindTransactions.feature",
     "tags": [
       {
-        "name": "@dropdown",
+        "name": "@find_transactions",
         "type": "Tag",
         "location": {
           "line": 1,
